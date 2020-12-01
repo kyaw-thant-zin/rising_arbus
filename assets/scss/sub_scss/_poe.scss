@@ -43,6 +43,7 @@ $bdcol-hover:#595757;
         font-size: 30px;
         color:$col-black;
         padding:60px 0;
+        line-height: 2;
         @include mediaQuerySp($spMaxWidth){
             font-size: 22px;
         }
