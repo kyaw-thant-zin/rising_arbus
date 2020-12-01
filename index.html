@@ -2,24 +2,72 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 
-  <title>Document</title>
+    <title>Document</title>
 
 </head>
 
 <body>
+    <main>
+        <div class="colleagues-work">
+            <img src="assets/img/colleagues_text.svg" alt="一緒に働く仲間を求めて">
+        </div>
+        <div id="contact" class="contact-wrapper">
+            <div class="contact-inner">
+                <div class="title">
+                    <img src="assets/img/title_contact.svg" alt="お問い合わせ">
+                </div>
+                <div class="contact-form">
+                    <table>
+                        <tr>
+                            <td class="label">お名前</td>
+                            <td>
+                                <span class="required">必須</span>
+                                <input type="text" name="name" class="input-field" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="label">お名前（ふりがな）</td>
+                            <td>
+                                <span class="required">必須</span>
+                                <input type="text" name="furigana" class="input-field" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="label">電話番号</td>
+                            <td>
+                                <span class="required">必須</span>
+                                <input type="tel" name="phone" class="input-field" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="label">その他</td>
+                            <td>
+                                <textarea name="other" class="input-field"></textarea>
+                                <p>※ご質問などございましたら、こちらにご記入くださいませ。</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="submit">
+                        <input type="submit" name="Submit" value="送信する">
+                    </div>
+                </div>
+            </div>
 
-  <h1>Exanple Image with lazy loading</h1>
-  <img lazy-src="assets/img/01.jpeg" alt="Covre image">
+        </div>
+    </main>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="assets/js/lazy-loading.js"></script>
-  <script src="assets/js/common.js"></script>
+    <h1>Exanple Image with lazy loading</h1>
+    <img lazy-src="assets/img/01.jpeg" alt="Covre image">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/js/lazy-loading.js"></script>
+    <script src="assets/js/common.js"></script>
 
 </body>
 
