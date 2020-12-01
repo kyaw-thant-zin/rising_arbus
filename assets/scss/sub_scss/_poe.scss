@@ -21,7 +21,7 @@ $bdcol-hover:#595757;
     margin:70px auto 0;
     text-align: center;
     line-height: 1.6;
-    font-family: "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     h3{
         font-size:46px;
         color:$col-yellow;
@@ -61,7 +61,7 @@ $bdcol-hover:#595757;
             font-size:26px;
             border:1px solid $col-yellow;
             display: block;
-            font-family: "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             &:hover{
                 background:$bg-white;
                 color:$col-black;
