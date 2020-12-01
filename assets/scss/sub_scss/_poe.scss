@@ -10,8 +10,14 @@ $bdcol-hover:#595757;
     background-repeat: no-repeat;
     background-size: cover;
     padding:25px 0 120px;
+    width:90%;
+    max-width: 1000px;
+    margin:0 auto;
     @include mediaQuerySp($spMaxWidth){
         padding:20px 0 85px;
+    }
+    h1{
+        width:200px;
     }
 }
 
