@@ -11,6 +11,7 @@ body {
   line-height: $bodyLineHeight;
   letter-spacing: $bodyLetterSpacing;
   font-variant-ligatures: none;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 img {
@@ -56,17 +57,27 @@ a:hover {
   flex-wrap: wrap;
 }
 
+
 /*******************  for lazy-loading ***********************/
 
 @keyframes ani {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes ani {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
+
 
 /*******************  for lazy-loading ***********************/
 
