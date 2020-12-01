@@ -3,17 +3,21 @@ body {
   background-size: 100%;
 }
 .ourworks-wrapper {
-  max-width: 100%;
-  width: 1000px;
-  margin: 0px auto;
+  background-image: url('assets/img/center_cover.jpeg');
+  background-repeat: no-repeat;
+  padding: 80px 0px;
   .ourworks-inner {
+    max-width: 100%;
+    width: 1000px;
+    margin: 0px auto;
     .title {
-
-    }
-    .desc {
       text-align: center;
+      img {
+        height: 40px;
+      }
     }
     .desc {
+      
     }
   }
 }
