@@ -46,6 +46,7 @@ $bdcol-hover:#595757;
         line-height: 2;
         @include mediaQuerySp($spMaxWidth){
             font-size: 22px;
+            padding:50px 0;
         }
     }
     .btn-submit{
