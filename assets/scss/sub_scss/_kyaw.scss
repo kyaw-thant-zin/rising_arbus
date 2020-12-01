@@ -4,12 +4,11 @@ body {
   font-family: 'Noto Sans JP', sans-serif;
 }
 .ourworks-wrapper {
-  background-image: url('assets/img/center_cover.jpeg');
+  background-image: url('assets/img/bg_center.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   .ourworks-overlay {
-    background-color: rgba(0,0,0,.4);
     .ourworks-inner {
       max-width: 100%;
       width: 1000px;
