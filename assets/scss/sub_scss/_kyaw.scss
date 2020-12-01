@@ -10,7 +10,7 @@ body {
   background-size: cover;
   .ourworks-overlay {
     .ourworks-inner {
-      max-width: 100%;
+      max-width: 90%;
       width: 900px;
       margin: 0px auto;
       padding: 80px 0px;
@@ -36,6 +36,86 @@ body {
         }
         p:nth-child(2) {
           margin: 25px 0px;
+        }
+      }
+    }
+  }
+}
+
+.service-wrapper {
+  .service-inner {
+    max-width: 90%;
+    width: 900px;
+    margin: 0px auto;
+    padding: 80px 0px;
+    .title {
+      text-align: center;
+      h3 {
+        color: #E68F12;
+        font-size: 14px;
+      }
+      img {
+        margin-top: 10px;
+        height: 40px;
+      }
+    }
+    .body {
+      h3 {
+        margin-top: 60px;
+        img {
+          height: 52px;
+        }
+      }
+      .desc {
+        margin: 20px 0px 40px;
+        p {
+          font-family: "HiraMinPro", "Noto Sans JP", sans-serif;
+          text-align: center;
+          font-size: 20px;
+          line-height: 2;
+          font-weight: 400;
+        }
+      }
+      .content {
+        position: relative;
+        padding-bottom: 40px;
+        .service-img {
+          width: 50%;
+        }
+        .service-txt {
+          position: absolute;
+          bottom: 0px;
+          left: 0;
+          width: 100%;
+          padding: 0px 30px;
+          .service-txt-box {
+            @include createCol(3, 30px, 0px);
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 2px 2px 4px rgba(0,0,0,0.10);
+            -moz-box-shadow: 5px 5px 5px rgba(0,0,0,0.10);
+	          -webkit-box-shadow: 5px 5px 5px rgba(0,0,0,0.10);
+            h3 {
+              margin-top: 0px;
+              padding: 10px 0px;
+              font-family: "HiraMinPro", "Noto Sans JP", sans-serif;
+              text-align: center;
+              font-size: 20px;
+              line-height: 2;
+              font-weight: 400;
+              background-color: #E68F12;
+            }
+            div {
+              padding: 10px 0px 15px;
+              p {
+                font-family: "Noto Sans JP", sans-serif;
+                text-align: center;
+                font-size: 14px;
+                line-height: 2;
+                font-weight: 400;
+              }
+            }
+          }
         }
       }
     }
