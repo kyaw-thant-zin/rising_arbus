@@ -1,0 +1,70 @@
+$col-yellow:#e68f12;
+$bg-yellow:#e68f12;
+$bg-white:#fff;
+$col-black:#000;
+$col-white:#fff;
+$bdcol-hover:#595757;
+.sub-01{
+    background-image:url(../img/bg02.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:25px 0 120px;
+}
+
+.th-inner{
+    width:90%;
+    max-width: 900px;
+    margin:70px auto;
+    text-align: center;
+    line-height: 1.6;
+    font-family: "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+    h3{
+        font-size:46px;
+        color:$col-yellow;
+        letter-spacing: 2px;
+        padding-bottom: 50px;
+    }
+    h4{
+        font-size: 40px;
+        color:$col-black;
+        letter-spacing: 2px;
+    }
+    p{
+        font-size: 30px;
+        color:$col-black;
+        padding:60px 0;
+    }
+    .btn-submit{
+        width:90%;
+        margin:0 auto;
+        a{
+            max-width: 300px;
+            margin:0 auto;
+            background:$bg-yellow;
+            padding:15px 0;
+            text-align: center;
+            color:$col-white;
+            font-size:26px;
+            border:1px solid $col-yellow;
+            display: block;
+            font-family: "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+            &:hover{
+                background:$bg-white;
+                color:$col-black;
+                border-color:$bdcol-hover;
+            }
+        }
+    }
+    
+}
+footer{
+    p{
+        font-size: 12px;
+        font-family: noto-sans-cjk-jp, sans-serif;
+        color:$col-white;
+        text-align: center;
+        background:$bg-yellow;
+        padding:20px 0;
+    }
+}
