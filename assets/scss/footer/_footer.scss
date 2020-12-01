@@ -1,0 +1,13 @@
+footer{
+    p{
+        font-size: 12px;
+        font-family: 'Noto Sans JP', sans-serif;
+        color:$col-white;
+        text-align: center;
+        background:$bg-yellow;
+        padding:20px 0;
+        @include mediaQuerySp($spMaxWidth){
+            font-size: 20px;
+        }
+    }
+}
