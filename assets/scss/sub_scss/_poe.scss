@@ -10,12 +10,15 @@ $bdcol-hover:#595757;
     background-repeat: no-repeat;
     background-size: cover;
     padding:25px 0 120px;
+    @include mediaQuerySp($spMaxWidth){
+        padding:20px 0 85px;
+    }
 }
 
 .th-inner{
     width:90%;
     max-width: 900px;
-    margin:70px auto;
+    margin:70px auto 0;
     text-align: center;
     line-height: 1.6;
     font-family: "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
@@ -24,16 +27,25 @@ $bdcol-hover:#595757;
         color:$col-yellow;
         letter-spacing: 2px;
         padding-bottom: 50px;
+        @include mediaQuerySp($spMaxWidth){
+            font-size: 40px;
+        }
     }
     h4{
         font-size: 40px;
         color:$col-black;
         letter-spacing: 2px;
+        @include mediaQuerySp($spMaxWidth){
+            font-size: 34px;
+        }
     }
     p{
         font-size: 30px;
         color:$col-black;
         padding:60px 0;
+        @include mediaQuerySp($spMaxWidth){
+            font-size: 22px;
+        }
     }
     .btn-submit{
         width:90%;
@@ -54,17 +66,12 @@ $bdcol-hover:#595757;
                 color:$col-black;
                 border-color:$bdcol-hover;
             }
+            @include mediaQuerySp($spMaxWidth){
+                font-size: 26px;
+                max-width: 250px;
+            }
         }
     }
     
 }
-footer{
-    p{
-        font-size: 12px;
-        font-family: noto-sans-cjk-jp, sans-serif;
-        color:$col-white;
-        text-align: center;
-        background:$bg-yellow;
-        padding:20px 0;
-    }
-}
+
