@@ -79,6 +79,9 @@ body {
       .content {
         position: relative;
         padding-bottom: 40px;
+        @include mediaQuerySp($spMaxWidth) {
+          padding-bottom: 0px;
+        }
         .service-img {
           width: 50%;
         }
@@ -88,6 +91,10 @@ body {
           left: 0;
           width: 100%;
           padding: 0px 30px;
+          @include mediaQuerySp($spMaxWidth) {
+            top: 70%;
+            padding: 0px 15px;
+          }
           .service-txt-box {
             @include createCol(3, 30px, 0px);
             text-align: center;
@@ -95,6 +102,9 @@ body {
             box-shadow: 2px 2px 4px rgba(0,0,0,0.10);
             -moz-box-shadow: 5px 5px 5px rgba(0,0,0,0.10);
 	          -webkit-box-shadow: 5px 5px 5px rgba(0,0,0,0.10);
+            @include mediaQuerySp($spMaxWidth) {
+              @include createCol(3, 15px, 0px);
+            }
             h3 {
               margin-top: 0px;
               padding: 10px 0px;
@@ -148,10 +158,24 @@ body {
       }
     }
     .desc {
-      display: inline-block;
+      width: 520px;
+      padding-left: 40px;
       margin: 50px auto 0px;
       .recruit_l {
-
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 5px 20px;
+        margin: 5px 0px;
+        span {
+          display: inline-block;
+          width: 105px;
+          padding: 5px 0px;
+          margin-right: 20px;
+          text-align: center;
+          border: 1px solid #000;
+          background-color: #f0f0f0;
+        }
       }
     }
   }
