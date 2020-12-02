@@ -121,3 +121,42 @@ body {
     }
   }
 }
+
+.recruit-wrapper {
+  background-image: url('assets/img/bottom_cover.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  padding: 80px 0px;
+  .recruit-overlay {
+    .recruit-inner {
+      max-width: 90%;
+      width: 630px;
+      margin: 0px auto;
+      padding: 65px 0px 80px;
+      background-color: #fff;
+      .title {
+        text-align: center;
+        h3 {
+          color: #E68F12;
+          font-size: 14px;
+        }
+        img {
+          height: 40px;
+          margin-top: 10px;
+        }
+      }
+    }
+    .desc {
+      display: inline-block;
+      margin: 50px auto 0px;
+      .recruit_l {
+
+      }
+    }
+  }
+}
+
+footer {
+  height: 200px;
+}
