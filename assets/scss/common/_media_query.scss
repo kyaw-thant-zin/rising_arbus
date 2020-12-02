@@ -12,8 +12,15 @@
   }
 }
 
-@mixin mediaQuerySp-Small($sp-small-MaxWidth) {
+@mixin mediaQuerySpSmall($sp-small-MaxWidth) {
   @media screen and (max-width: $sp-small-MaxWidth) {
     @content;
   }
 }
+
+@mixin mediaQuerySpXs($sp-xs-MaxWidth) {
+  @media screen and (max-width: $sp-xs-MaxWidth) {
+    @content;
+  }
+}
+

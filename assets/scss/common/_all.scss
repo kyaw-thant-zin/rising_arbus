@@ -161,7 +161,7 @@ body {
     width: 50%;
     bottom: 0;
   }
-  @include mediaQuerySp-Small($sp-xs-MaxWidth) {
+  @include mediaQuerySpXs($sp-xs-MaxWidth) {
     width: 65%;
   }
 }
@@ -197,7 +197,7 @@ body {
       width: 30%;
       box-shadow: 4px 2px 9px rgba(0, 0, 0, 0.3);
       background-color: #FFF;
-      @include mediaQuerySp-Small($sp-xs-MaxWidth) {
+      @include mediaQuerySpXs($sp-xs-MaxWidth) {
         width: 100%;
         margin-bottom: 50px;
       }
@@ -308,7 +308,7 @@ body {
     @include mediaQuerySp($spMaxWidth) {
       padding: 60px 0px 160px;
     }
-    @include mediaQuerySp-Small($sp-small-MaxWidth) {
+    @include mediaQuerySpSmall($sp-small-MaxWidth) {
       padding: 60px 0px;
     }
     .title {
@@ -364,7 +364,7 @@ body {
             top: 70%;
             padding: 0px 15px;
           }
-          @include mediaQuerySp-Small($sp-small-MaxWidth) {
+          @include mediaQuerySpSmall($sp-small-MaxWidth) {
             position: relative;
             top: 0;
             bottom: 0;
@@ -381,7 +381,7 @@ body {
             @include mediaQuerySp($spMaxWidth) {
               @include createCol(3, 15px, 0px);
             }
-            @include mediaQuerySp-Small($sp-small-MaxWidth) {
+            @include mediaQuerySpSmall($sp-small-MaxWidth) {
               @include createCol(1, 0px, 15px);
             }
             h3 {
@@ -447,7 +447,7 @@ body {
       padding-left: 40px;
       margin: 50px auto 0px;
       text-align: left;
-      @include mediaQuerySp-Small($sp-small-MaxWidth) {
+      @include mediaQuerySpSmall($sp-small-MaxWidth) {
         width: auto;
         padding-left: 0;
         text-align: center;
@@ -466,7 +466,7 @@ body {
           text-align: center;
           border: 1px solid #000;
           background-color: #f0f0f0;
-          @include mediaQuerySp-Small($sp-small-MaxWidth) {
+          @include mediaQuerySpSmall($sp-small-MaxWidth) {
             display: block;
             width: 100%;
             margin: 10px auto;
@@ -475,4 +475,200 @@ body {
       }
     }
   }
+}
+
+.colleagues-work {
+  width: 100%;
+  background-color: $colorE89112;
+  position: relative;
+  margin-bottom: 40px;
+  padding: 17px 0 13px;
+  img {
+      max-width: 430px;
+      width: 75%;
+      margin: 0 auto;
+      display: block;
+  }
+  &:after {
+      content: "";
+      border-style: solid;
+      border-width: 15px 15px 0 15px;
+      border-color: $colorE89112 transparent transparent transparent;
+      position: absolute;
+      @include transform(translateX(-50%));
+      left: 50%;
+      bottom: -13px;
+  }
+}
+
+.contact-wrapper {
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+  .title {
+      max-width: 235px;
+      width: 50%;
+      margin: 0 auto 40px;
+  }
+}
+
+.contact-form {
+  color: $color000;
+  table {
+      width: 100%;
+      display: block;
+      padding: 10px 20px 40px;
+      background-color: $colorFFF;
+      @include mediaQuerySp($spMaxWidth) {
+          padding-bottom: 10px;
+      }
+  }
+  tbody {
+      display: block;
+  }
+  tr {
+      width: 100%;
+      display: table;
+      border-bottom: 1.5px solid #595757;
+      &:last-child {
+          @include mediaQuerySp($spMaxWidth) {
+              border-bottom: none;
+          }
+      }
+  }
+  td {
+      padding: 30px 0;
+      font-family: 'Noto Sans JP';
+      display: block;
+      @include mediaQuerySp($spMaxWidth) {
+          width: 100%;
+      }
+      p {
+          font-size: 14px;
+          font-weight: 600;
+          padding-top: 5px;
+      }
+      &:last-child {
+          position: relative;
+          padding: 30px 20px 25px 57px;
+          @include mediaQuerySp($spMaxWidth) {
+              padding: 20px 0px 30px 0px;
+          }
+      }
+  }
+  .label {
+      font-size: 18px;
+      font-weight: 600;
+      width: 300px;
+      padding-left: 20px;
+      @include mediaQuerySp($spMaxWidth) {
+          width: 100%;
+          padding: 30px 0 0 0;
+      }
+  }
+  .input-field {
+      display: block;
+      width: 100%;
+      height: 50px;
+      background-color: #F0F0F0;
+      outline: none;
+      border: 1px solid #595757;
+      padding: 0 0 0 15px;
+      font-size: 18px;
+  }
+  .required {
+      color: $colorFFF;
+      background-color: #EB1C24;
+      font-size: 14px;
+      padding: 0px 5px;
+      position: absolute;
+      left: 0;
+      top: 37px;
+      @include mediaQuerySp($spMaxWidth) {
+          right: 0;
+          top: -25px;
+          left: auto;
+      }
+  }
+  textarea.input-field {
+      resize: none;
+      height: 120px;
+  }
+}
+
+.submit {
+  input {
+      width: 260px;
+      margin: 40px auto;
+      padding: 10px 0;
+      text-align: center;
+      color: $colorFFF;
+      background-color: $colorE89112;
+      font-size: 26px;
+      outline: none;
+      font-weight: 600;
+      font-family: 'Noto Serif JP';
+      display: block;
+      border: 1px solid $colorE89112;
+      &:hover {
+          background-color: $colorFFF;
+          color: $color000;
+          border-color: $color000;
+      }
+  }
+}
+
+footer {
+  width: 100%;
+  background-color: $colorFFF;
+  padding-top: 10px;
+  font-family: 'Noto Sans JP';
+}
+
+.footer-logo {
+  max-width: 395px;
+  width: 70%;
+  margin: 50px auto 70px;
+  @include mediaQuerySp($spMaxWidth) {
+      margin: 50px auto;
+  }
+}
+
+.footer-wrap {
+  justify-content: space-between;
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto 30px;
+}
+
+.footer-address {
+  width: 33.3%;
+  color: $color000;
+  text-align: center;
+  padding: 0 20px;
+  border-right: 2px solid $colorE89112;
+  @include mediaQuerySp($spMaxWidth) {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid $colorE89112;
+      text-align: left;
+      padding: 20px 0;
+  }
+  &:last-child {
+      border: none;
+  }
+  h3 {
+      font-size: 18px;
+  }
+  p {
+      font-size: 14px;
+  }
+}
+
+.copy-right {
+  font-size: 12px;
+  color: $colorFFF;
+  text-align: center;
+  background-color: $colorE89112;
+  padding: 10px 0;
 }

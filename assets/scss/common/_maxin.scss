@@ -12,3 +12,9 @@
     margin-top: 0px;
   }
 }
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
