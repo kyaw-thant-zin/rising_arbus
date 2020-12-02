@@ -224,8 +224,10 @@
     bottom: 20px;
     right: 20px;
     width: 30%;
+    z-index: 99;
     @include mediaQuerySp($spMaxWidth) {
       width: 50%;
+      bottom: 0;
     }
     @include mediaQuerySp-Small($sp-small-MaxWidth) {
       width: 65%;
