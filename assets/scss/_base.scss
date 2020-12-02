@@ -11,6 +11,13 @@ $colorE89112: #E68F12;
 $colorFFF: #fff;
 $color000: #000;
 
+$col-yellow:#e68f12;
+$bg-yellow:#e68f12;
+$bg-white:#fff;
+$col-black:#000;
+$col-white:#fff;
+$bdcol-hover:#595757;
+
 $pcMinWidth: 768px;
 $spMaxWidth: 768px;
 $sp-xs-MaxWidth: 750px;
@@ -40,7 +47,8 @@ $sp-small-MaxWidth: 750px;
 // @import "sub_scss/kyaw";
 // @import "sub_scss/khine";
 // @import "sub_scss/naw";
-@import "sub_scss/poe";
+// @import "sub_scss/poe";
+@import "sub_page/thank";
 
 ///////////////////////////// Footer  ////////////////////////////////////
 
