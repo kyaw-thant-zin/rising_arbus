@@ -96,3 +96,29 @@ a:hover {
   animation-duration: 1s;
   -webkit-animation-duration: 1s;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.cmn-ttl {
+  text-align: center;
+  span {
+    display: block;
+    color: $main-color;
+    font-size: 14px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    line-height: 2;
+    @include mediaQuerySp($spMaxWidth) {
+      font-size: 12px;
+    }
+  }
+  img {
+    max-width: 200px;
+    vertical-align: middle;
+    @include mediaQuerySp($spMaxWidth) {
+      max-width: 130px;
+    }
+  }
+}
