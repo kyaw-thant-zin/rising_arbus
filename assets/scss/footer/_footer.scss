@@ -2,7 +2,6 @@ footer {
   width: 100%;
   background-color: $colorFFF;
   padding-top: 10px;
-  font-family: 'Noto Sans JP';
 }
 
 .footer-logo {
@@ -10,7 +9,7 @@ footer {
   width: 70%;
   margin: 50px auto 70px;
   @include mediaQuerySp($spMaxWidth) {
-      margin: 50px auto;
+    margin: 50px auto;
   }
 }
 
@@ -28,20 +27,23 @@ footer {
   padding: 0 20px;
   border-right: 2px solid $colorE89112;
   @include mediaQuerySp($spMaxWidth) {
-      width: 100%;
-      border-right: none;
-      border-bottom: 1px solid $colorE89112;
-      text-align: left;
-      padding: 20px 0;
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid $colorE89112;
+    text-align: left;
+    padding: 20px 0;
   }
   &:last-child {
-      border: none;
+    border: none;
   }
   h3 {
-      font-size: 18px;
+    font-size: 18px;
+    font-weight: 400;
   }
   p {
-      font-size: 14px;
+    font-size: 14px;
+    line-height: 2;
+    font-weight: 300;
   }
 }
 

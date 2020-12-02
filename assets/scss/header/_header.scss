@@ -25,6 +25,7 @@ header {
     @include mediaQuerySp($spMaxWidth) {
       width: 60%;
       padding-left: 10px;
+      box-sizing: border-box;
     }
   }
 }

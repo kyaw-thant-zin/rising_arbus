@@ -273,7 +273,7 @@ header {
         font-size: 28px;
         color: $main-color;
         box-sizing: border-box;
-        font-family: "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+        font-family: $jp-font-style;
         font-weight: bold;
         @include mediaQuerySp($spMaxWidth) {
           padding: 15px 5px;
