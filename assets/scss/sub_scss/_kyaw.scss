@@ -1,9 +1,9 @@
 $sp-small-MaxWidth: 750px;
-  @mixin mediaQuerySp-Small($sp-small-MaxWidth) {
-    @media screen and (max-width: $sp-small-MaxWidth) {
-      @content;
-    }
+@mixin mediaQuerySp-Small($sp-small-MaxWidth) {
+  @media screen and (max-width: $sp-small-MaxWidth) {
+    @content;
   }
+}
 body {
   background-image: url('assets/img/body_bg.jpg');
   background-size: 100%;
