@@ -39,7 +39,7 @@ header {
       margin-bottom: 30px;
     }
     a {
-      color: $sec-color;
+      color: $secondary-color;
       font-size: 14px;
       font-weight: 500;
       @include mediaQuerySp($spMaxWidth) {
@@ -86,7 +86,7 @@ header {
       width: 60%;
       margin: 0 auto;
       height: 1.5px;
-      background-color: $sec-color;
+      background-color: $secondary-color;
       border-radius: 50px;
       &:nth-of-type(1) {
         top: 20px;

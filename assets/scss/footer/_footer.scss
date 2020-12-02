@@ -1,6 +1,6 @@
 footer {
   width: 100%;
-  background-color: $colorFFF;
+  background-color: $primary-color;
   padding-top: 10px;
 }
 
@@ -22,14 +22,14 @@ footer {
 
 .footer-address {
   width: 33.3%;
-  color: $color000;
+  color: $secondary-color;
   text-align: center;
   padding: 0 20px;
-  border-right: 2px solid $colorE89112;
+  border-right: 2px solid $main-color;
   @include mediaQuerySp($spMaxWidth) {
     width: 100%;
     border-right: none;
-    border-bottom: 1px solid $colorE89112;
+    border-bottom: 1px solid $main-color;
     text-align: left;
     padding: 20px 0;
   }
@@ -49,8 +49,8 @@ footer {
 
 .copy-right {
   font-size: 12px;
-  color: $colorFFF;
+  color: $primary-color;
   text-align: center;
-  background-color: $colorE89112;
+  background-color: $main-color;
   padding: 10px 0;
 }

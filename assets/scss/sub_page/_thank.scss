@@ -36,7 +36,7 @@
   }
   p {
     font-size: 30px;
-    color: $col-black;
+    color: $secondary-color;
     padding: 60px 0;
     line-height: 2;
     font-family: $jp-font-style;
@@ -53,19 +53,19 @@
     a {
       max-width: 330px;
       margin: 0 auto;
-      background: $bg-yellow;
+      background: $main-color;
       padding: 10px 0;
       text-align: center;
-      color: $col-white;
+      color: $primary-color;
       font-size: 26px;
-      border: 1px solid $col-yellow;
+      border: 1px solid $main-color;
       display: block;
       font-family: $jp-font-style;
       font-weight: bold;
       &:hover {
-        background: $bg-white;
-        color: $col-black;
-        border-color: $bdcol-hover;
+        background: $primary-color;
+        color: $secondary-color;
+        border-color: $border-hover;
       }
       @include mediaQuerySp($spMaxWidth) {
         font-size: 18px;

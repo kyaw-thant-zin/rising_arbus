@@ -167,6 +167,11 @@ body {
   bottom: 20px;
   right: 20px;
   width: 30%;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
   z-index: 99;
   @include mediaQuerySp($spMaxWidth) {
     width: 50%;
@@ -225,7 +230,7 @@ body {
         }
         span {
           display: block;
-          color: $sec-color;
+          color: $secondary-color;
           font-size: 16px;
           font-family: 'Noto Sans JP', sans-serif;
           font-weight: 300;
@@ -493,23 +498,37 @@ body {
         padding-left: 0;
         text-align: center;
       }
-      .recruit_l {
-        font-size: 16px;
-        font-weight: 400;
-        padding: 5px 20px;
-        margin: 5px 0px;
-        span {
-          display: inline-block;
-          width: 105px;
-          padding: 5px 0px;
-          margin-right: 20px;
-          text-align: center;
-          border: 1px solid #000;
-          background-color: #f0f0f0;
-          @include mediaQuerySpSmall($sp-small-MaxWidth) {
-            display: block;
-            width: 100%;
-            margin: 10px auto;
+      table {
+        width: 100%;
+        tr {
+          font-size: 16px;
+          padding: 0 20px;
+          margin: 15px 0px;
+          box-sizing: border-box;
+          align-items: center;
+          @include mediaQuerySp($spMaxWidth) {
+            margin: 10px 0;
+            font-size: 13px;
+            justify-content: space-between;
+          }
+          th {
+            display: inline-block;
+            width: 105px;
+            padding: 5px 0px;
+            margin-right: 20px;
+            text-align: center;
+            border: 1px solid #000;
+            background-color: #f0f0f0;
+            @include mediaQuerySp($spMaxWidth) {
+              width: 30%;
+              margin-right: 0;
+            }
+          }
+          td {
+            @include mediaQuerySp($spMaxWidth) {
+              width: 65%;
+              text-align: left;
+            }
           }
         }
       }
@@ -519,7 +538,7 @@ body {
 
 .colleagues-work {
   width: 100%;
-  background-color: $colorE89112;
+  background-color: $main-color;
   position: relative;
   margin-bottom: 40px;
   padding: 17px 0 13px;
@@ -533,7 +552,7 @@ body {
     content: "";
     border-style: solid;
     border-width: 15px 15px 0 15px;
-    border-color: $colorE89112 transparent transparent transparent;
+    border-color: $main-color transparent transparent transparent;
     position: absolute;
     @include transform(translateX(-50%));
     left: 50%;
@@ -556,12 +575,12 @@ body {
 }
 
 .contact-form {
-  color: $color000;
+  color: $secondary-color;
   table {
     width: 100%;
     display: block;
     padding: 10px 20px 40px;
-    background-color: $colorFFF;
+    background-color: $primary-color;
     @include mediaQuerySp($spMaxWidth) {
       padding-bottom: 10px;
     }
@@ -622,7 +641,7 @@ body {
     font-size: 18px;
   }
   .required {
-    color: $colorFFF;
+    color: $primary-color;
     background-color: #EB1C24;
     font-size: 14px;
     padding: 2px 6px 3px 6px;
@@ -648,19 +667,19 @@ body {
     margin: 40px auto;
     padding: 10px 0;
     text-align: center;
-    color: $colorFFF;
-    background-color: $colorE89112;
+    color: $primary-color;
+    background-color: $main-color;
     font-size: 26px;
     outline: none;
     font-weight: 600;
     font-family: $jp-font-style;
     display: block;
-    border: 1px solid $colorE89112;
+    border: 1px solid $main-color;
     letter-spacing: 2px;
     &:hover {
-      background-color: $colorFFF;
-      color: $color000;
-      border-color: $color000;
+      background-color: $primary-color;
+      color: $secondary-color;
+      border-color: $secondary-color;
     }
   }
 }
